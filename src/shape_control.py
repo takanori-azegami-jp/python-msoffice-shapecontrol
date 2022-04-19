@@ -68,7 +68,7 @@ class Excel(Document):
 	#	Excel図形操作
 	def shape_control(self):
 		pythoncom.CoInitialize()  #win32com開始前にこれを呼び出す
-		excel = win32com.client.DispatchEx("Excel.Application")
+		excel = win32com.client.DispatchEx("Excel.Application") #ファイルサーバなどのリモート処理ではDispatchではなくDispatchExを使う
 		excel.Visible = False
 
 		try:
@@ -100,7 +100,7 @@ class Word(Document):
 	# Word図形操作
 	def shape_control(self):
 		pythoncom.CoInitialize()  #win32com開始前にこれを呼び出す
-		word = win32com.client.DispatchEx("Word.Application")
+		word = win32com.client.DispatchEx("Word.Application") #ファイルサーバなどのリモート処理ではDispatchではなくDispatchExを使う
 		word.Visible = False
 
 		try:
@@ -131,7 +131,7 @@ class PowerPoint(Document):
 	#	PowerPoint図形操作
 	def shape_control(self):
 		pythoncom.CoInitialize()  #win32com開始前にこれを呼び出す
-		powerpoint =win32com.client.DispatchEx("PowerPoint.Application")
+		powerpoint =win32com.client.DispatchEx("PowerPoint.Application") #ファイルサーバなどのリモート処理ではDispatchではなくDispatchExを使う
 		powerpoint.Visible = True
 
 		try:
