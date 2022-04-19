@@ -16,5 +16,6 @@ PythonでMicrosoftOffice（Excel、Word、PowerPoint）での図形操作
 ```powershell
 > python shape_control.py  "対象フォルダパス"
 ```
-## 参考
+## 説明
+下記リンク参照<br>
 []()
