@@ -1,5 +1,5 @@
 # Python-MicrosoftOffice-ShapeControl
-MicrosoftOffice（Excel、Word、PowerPoint）での図形操作
+PythonでMicrosoftOffice（Excel、Word、PowerPoint）での図形操作
 
 ## 実行環境
 - Windows10 Pro：21H1
