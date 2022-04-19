@@ -9,10 +9,10 @@ MicrosoftOffice（Excel、Word、PowerPoint）での図形操作
 ## インストールするライブラリ
 - pywin32
 ```powershell
-pip install pywin32
+> pip install pywin32
 ```
 ## 実行方法
 コマンドプロンプトから下記を実行
 ```powershell
->python shape_control.py  "対象フォルダパス"
+> python shape_control.py  "対象フォルダパス"
 ```
