@@ -11,11 +11,7 @@ PythonでMicrosoftOffice（Excel、Word、PowerPoint）での図形操作
 ```powershell
 > pip install pywin32
 ```
-## 実行方法
-コマンドプロンプトから下記を実行
-```powershell
-> python shape_control.py  "対象フォルダパス"
-```
+
 ## 説明
 下記リンク参照<br>
 []()
