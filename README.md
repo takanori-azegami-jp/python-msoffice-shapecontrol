@@ -14,4 +14,4 @@ PythonでMicrosoftOffice（Excel、Word、PowerPoint）での図形操作
 
 ## 説明
 下記リンク参照<br>
-[]()
+[【Python】Excel、Word、PowerPointの図形処理をしたら嵌った話](https://qiita.com/takanori-azegami-jp/items/a5127873cf29b83c9079)
