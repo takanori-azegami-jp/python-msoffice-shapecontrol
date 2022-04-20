@@ -35,7 +35,6 @@ class Excel(Document):
 		pythoncom.CoInitialize()  #win32com開始前にこれを呼び出す
 		excel = win32com.client.DispatchEx("Excel.Application") #ファイルサーバなどのリモート処理ではDispatchではなくDispatchExを使う
 		excel.Visible = True
-
 		try:
 			excel.DisplayAlerts = False
 			doc = excel.Workbooks.Open(self.file_name,False ,False ,None ,"dummy@password" ,"dummy@password" ,True) #パスワード有りはダミーパスワードで無視
@@ -67,7 +66,6 @@ class Word(Document):
 		pythoncom.CoInitialize()  #win32com開始前にこれを呼び出す
 		word = win32com.client.DispatchEx("Word.Application") #ファイルサーバなどのリモート処理ではDispatchではなくDispatchExを使う
 		word.Visible = True
-
 		try:
 			word.DisplayAlerts =  False
 			doc = word.Documents.Open(self.file_name, False, False, None,"dummy@password", "dummy@password", False, "dummy@password", "dummy@password") #パスワード有りはダミーパスワードで無視する
@@ -99,7 +97,6 @@ class PowerPoint(Document):
 		pythoncom.CoInitialize()  #win32com開始前にこれを呼び出す
 		powerpoint =win32com.client.DispatchEx("PowerPoint.Application") #ファイルサーバなどのリモート処理ではDispatchではなくDispatchExを使う
 		powerpoint.Visible = True
-
 		try:
 			doc = powerpoint.Presentations.Open(self.file_name +"::dummy@password::dummy@password") #パスワード有りはダミーパスワードで無視する
 			slide = doc.slides[0] #1スライド目を対象
