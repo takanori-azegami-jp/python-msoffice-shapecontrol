@@ -1,4 +1,4 @@
-# Python-MicrosoftOffice-ShapeControl
+# python-msoffice-shapecontrol
 PythonでMicrosoftOffice（Excel、Word、PowerPoint）での図形操作
 
 ## 実行環境
